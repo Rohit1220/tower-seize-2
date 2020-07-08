@@ -1,7 +1,7 @@
 class block extends BaseClass {
   constructor(x, y){
     super(x,y,50,50);
-    this.Visiblity = 255;
+    this.Visiblity = 10;
   }
 
  display(){
@@ -16,5 +16,10 @@ class block extends BaseClass {
      tint(255,this.Visiblity);
      pop();
    }
+  }
+  score(){
+    if (this.Visiblity === 0){
+      score+10;
+    }
   }
 };
