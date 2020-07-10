@@ -78,6 +78,7 @@ function draw() {
   block25.display();
   stone1.display();
   sling1.display();
+  //score.display();
   drawSprites();
 }
 function mouseDragged(){
